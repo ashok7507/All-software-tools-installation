@@ -19,3 +19,8 @@ Step 1: Install all dependencies of docker
 Step2: Install docker plugins
       
       sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
+
+Step3: Assign sudo permission to the docker
+            
+    usermod -aG docker $USER
+    newgrp docker 
