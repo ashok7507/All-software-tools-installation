@@ -1,5 +1,7 @@
 **DOCKER**
-    
+
+Step 1: Install all dependencies of docker
+
     # Add Docker's official GPG key:
     sudo apt-get update -y
     sudo apt-get install ca-certificates curl
@@ -14,3 +16,6 @@
     sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
     sudo apt-get update -y
 
+Step2: Install docker plugins
+      
+      sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
